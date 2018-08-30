@@ -15,7 +15,7 @@
     <ons-page>
         <ons-toolbar>
             <div class="left">
-                <ons-icon size="30px" icon="md-home" ></ons-icon>
+                <ons-icon size="30px" icon="md-home"></ons-icon>
             </div>
             <div class="right">
                 <ons-icon size="30px" icon="md-face"></ons-icon>
@@ -35,20 +35,36 @@
 
     <template id="tab1.html">
         <ons-page id="Tab1">
-                <ons-page>
-                        <p style="text-align: center; margin-top: 10px;">
-                          <ons-search-input
-                            placeholder="Search"
-                            onchange="ons.notification.alert('Searched for: ' + this.value)"
-                          ></ons-search-input>
-                        </p>
-                      </ons-page>
+            <ons-page>
+                <p style="text-align: center; margin-top: 10px;">
+                    <ons-search-input placeholder="Search" onchange="ons.notification.alert('Searched for: ' + this.value)"></ons-search-input>
+                </p>
+                <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
+                    <ons-carousel-item style="background-color: #e9dfd7;">
+                        <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+
+                        </div>
+                    </ons-carousel-item>
+                    <ons-carousel-item style="background-color: rgb(178, 184, 197);">
+                        <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+
+                        </div>
+                    </ons-carousel-item>
+                    <ons-carousel-item style="background-color: rgb(102, 184, 209);">
+                        <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+
+                        </div>
+                    </ons-carousel-item>
+                </ons-carousel>
+            </ons-page>
+
+
         </ons-page>
     </template>
 
     <template id="tab2.html">
         <ons-page id="Tab2">
-          
+
         </ons-page>
     </template>
 </body>
